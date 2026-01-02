@@ -6,11 +6,13 @@ Docker Desktop
 
 Build docker image :docker build -t flask-docker-demo .
 Run the container :docker run -p 5000:5000 flask-docker-demo 
-Tag your image: docker tag flask-docker-demo asang/flask-docker-demo:latest1
+Tag your image: docker tag flask-docker-demo asang55/flask-docker-demo:latest
 Assure that you are logged in :docker login
-Push image to dockerhub :docker push asang/flask-docker-demo:latest1
-Pull image from dockerhub: docker pull asang/flask-docker-demo:latest1
-Run the Pulled image: docker run -p 5000:5000 asang/flask-docker-demo:latest1
+Push image to dockerhub :docker push asang55/flask-docker-demo:latest
+Pull image from dockerhub: docker pull asang55/flask-docker-demo:latest
+Run the Pulled image: docker run -p 5000:5000 asang55/flask-docker-demo:latest
 
-docker build -t mlops-docker-demo
+docker build -t mlops-docker-demo .
 docker run -p 5000:5000 mlops-docker-demo
+:docker push asang55/mlops-docker-demo:latest
+docker pull asang55/mlops-docker-demo:latest
